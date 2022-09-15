@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>momentum</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="settings" id="settings">
+
+        <div class="header__lang">
+            <div class="header__lang-btn-wrapper">
+                <button class="header__lang-btn header__en">EN</button>
+            </div>
+            <div class="header__lang-btn-wrapper">
+                <button class="header__lang-btn header__ru">RU</button>
+            </div>
+        </div>
+
+        <h3 class="settings__blocks"></h3>
+        <div class="settings__options-wrapper">
+            <div>
+                <input type="checkbox" name="player" id="playerCheck">
+                <label for="player" class="settings__options"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="time" id="time">
+                <label for="time" class="settings__options"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="date" id="date">
+                <label for="date" class="settings__options"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="greetings" id="greetings">
+                <label for="greetings" class="settings__options"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="weather" id="weather">
+                <label for="weather" class="settings__options"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="quotes" id="quotes">
+                <label for="quotes" class="settings__options"></label>
+            </div>
+        </div>
+
+    </div>
+    <header class="header">
+        <div class="header__player">
+
+            <h3 class="header__title"></h3>
+
+            <div class="header__player-controls">
+                <button class="header__play-prev header__player-icon"></button>
+                <button class="header__play active header__player-icon"></button>
+                <button class="header__play-next header__player-icon"></button>
+
+                <input class="header__progress" type="range" min="0" max="" value="0">
+                <div class="header__current-time"></div>
+                <span>/</span>
+                <div class="header__duration-time"></div>
+
+                <div class="header__volume-container">
+                    <div class="header__volume-button">
+                        <div class="header__volume volume-unmute"></div>
+                    </div>
+                    
+                    <div class="header__volume-slider">
+                        <div class="header__volume-percentage"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__play-list"></ul>
+        </div>
+        <div class="header__weather">
+            <input type="text" class="header__city" value="Minsk">
+            <i class="header__weather-icon owf"></i>
+            <div class="header__weather-error"></div>
+            <div class="header__description-container">
+            <span class="header__temperature"></span>
+            <span class="header__weather-description"></span>
+            </div>
+            <div class="header__wind"></div>
+            <div class="header__humidity"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__slider-icons">
+            <button class="main__slide-prev main__slider-icon"></button>
+            <button class="main__slide-next main__slider-icon"></button>
+        </div>
+        <time class="main__time"></time>
+        <date class="main__date"></date>
+        <div class="main__greeting-container">
+            <span class="main__greeting"></span>
+            <input type="text" name="name" class="main__name">
+        </div>
+    </main>
+    <footer class="footer">
+        <button class="footer__change-quote"></button>
+        <div class="footer__quote-wrapper">
+            <div class="footer__quote"></div>
+            <div class="footer__author"></div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__github">
+                <a href="https://github.com/davilexx" target="_blank" class="footer__gh-link">davilexx</a>
+            </div>
+            <div class="footer__settings">
+                <button class="footer__settings-btn"></button>
+            </div>
+            <div class="footer__rs">
+                <a href="https://rs.school/" target="_blank" class="footer__gh-link">
+                    <img src="assets/img/rs_school.svg" alt="RS School" class="footer__rs-img">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
