@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/custom.css">
+  <title>momentum</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <h3 class="track-title"></h3>
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <input class="progress" type="range" min="0" max="" value="0">
+        <div class="current-time"></div>
+        <span>/</span>
+        <div class="duration-time"></div>
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume volume-unmute"></div>
+          </div>
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-container">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer-wrapper">
+      <a href="https://github.com/davilexx/" class="footer-github">davilexx</a>
+      <button class="footer-settings">Settings</button>
+      <a href="https://rs.school/js/" class="footer-rs">
+        <img src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="footer-img">
+      </a>
+    </div>
+  </footer>
+  <div class="settings">
+    <div class="settings-wrapper">
+      <h3 class="settings-title">Settings</h3>
+      <div class="btn-wrapper">
+        <button class="btn-en">EN</button>
+        <button class="btn-ru">RU</button>
+      </div>
+      <h4 class="api-list-title">Images API</h4>
+      <ul class="api-list">
+        <li class="api-item">
+          <input type="radio" name="image-api" id="github">
+          <label for="github">GitHub</label>
+        </li>
+        <li class="api-item">
+          <input type="radio" name="image-api" id="unsplash">
+          <label for="unsplash">Unsplash</label>
+          <br>
+        </li>
+        <li class="api-item">
+          <input type="radio" name="image-api" id="flickr">
+          <label for="flickr">Flickr</label>
+          <br>
+        </li>
+        <br>
+        <label for="tag=img">Tag:</label>
+        <input class="tag-img" type="text" placeholder="your tag here">
+      </ul>
+      <h4 class="settings-list-title">Show/hide items</h4>
+      <ul class="settings-list">
+        <li class="settings-item">
+          <input type="checkbox" name="time" id="time">
+          <label for="time">Time</label>
+        </li>
+        <li class="settings-item">
+          <input type="checkbox" name="date" id="date">
+          <label for="date">Date</label>
+        </li>
+        <li class="settings-item">
+          <input type="checkbox" name="greeting" id="greeting">
+          <label for="greeting">Greeting</label>
+        </li>
+        <li class="settings-item">
+          <input type="checkbox" name="quote" id="quote">
+          <label for="quote">Quote of the day</label>
+        </li>
+        <li class="settings-item">
+          <input type="checkbox" name="weather" id="weather">
+          <label for="weather">Weather forecast</label>
+        </li>
+        <li class="settings-item">
+          <input type="checkbox" name="player" id="player">
+          <label for="player">Audio player</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/playList.js" type="module"></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
